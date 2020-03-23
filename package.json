@@ -95,5 +95,5 @@
       "**/test/**"
     ]
   },
-  "dependencies": {}
+  "dependencies": {"react-native-fs": "^2.16.6"}
 }

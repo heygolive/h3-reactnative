@@ -45,7 +45,7 @@ var libh3 = function (libh3) {
       ret = tryParseAsDataURI(filename);
 
       if (!ret) {
-        if (!nodeFS) { nodeFS = require("fs"); }
+        if (!nodeFS) { nodeFS = require("react-native-fs"); }
         if (!nodePath) { nodePath = require("path"); }
         filename = nodePath["normalize"](filename);
         ret = nodeFS["readFileSync"](filename);
