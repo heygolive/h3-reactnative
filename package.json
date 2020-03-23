@@ -61,10 +61,6 @@
     "prepublishOnly": "yarn dist",
     "prettier": "prettier --write --single-quote --no-bracket-spacing --print-width=100 'lib/**/*.js' 'build/**/*.js' 'test/**/*.js'"
   },
-  "browser": {
-    "./dist/h3-js.js": "./dist/browser/h3-js.js",
-    "./dist/h3-js.es.js": "./dist/browser/h3-js.es.js"
-  },
   "devDependencies": {
     "benchmark": "^2.1.4",
     "budo": "^11.5.0",
