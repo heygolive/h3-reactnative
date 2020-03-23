@@ -1,5 +1,5 @@
 {
-  "name": "h3-js",
+  "name": "h3-reactnative",
   "version": "3.6.3",
   "description": "Emscripten transpiled libh3 'bindings' for Node/Web JS",
   "author": "Nick Rabinowitz <nickr@uber.com>",
@@ -9,7 +9,7 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/uber/h3-js.git"
+    "url": "https://github.com/realPrimoh/h3-reactnative.git"
   },
   "keywords": [
     "h3",
