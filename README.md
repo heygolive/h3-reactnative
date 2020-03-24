@@ -13,7 +13,7 @@ For more information on H3 and for the full API documentation, please see the [H
 
 ## Install
 
-    npm install h3-js
+    npm install git+https://github.com/realPrimoh/h3-reactnative.git
 
 ## Usage
 

@@ -4,7 +4,8 @@
   "description": "Emscripten transpiled libh3 'bindings' for Node/Web JS",
   "author": "Nick Rabinowitz <nickr@uber.com>",
   "contributors": [
-    "David Ellis <isv.damocles@gmail.com>"
+    "David Ellis <isv.damocles@gmail.com>",
+    "Priyam Mohanty <priyam.mohanty@gmail.com>"
   ],
   "license": "Apache-2.0",
   "repository": {
