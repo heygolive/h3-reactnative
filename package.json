@@ -73,6 +73,7 @@
     "jsdoc-to-markdown": "^4.0.1",
     "microbundle": "^0.11.0",
     "nyc": "^14.1.1",
+    "path": "^0.12.7",
     "prettier": "^1.12.1",
     "rollup": "^1.7.0",
     "tape": "^4.8.0",
