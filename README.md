@@ -1,10 +1,10 @@
 <img align="right" src="https://uber.github.io/img/h3Logo-color.svg" alt="H3 Logo" width="200">
 
-# h3-js
+# h3-reactnative
 
 [![H3 Version](https://img.shields.io/badge/h3_api-v3.6.3-blue.svg)](https://github.com/uber/h3/releases/tag/v3.6.3) [![Build Status](https://travis-ci.com/uber/h3-js.svg?branch=master)](https://travis-ci.com/uber/h3-js) [![Coverage Status](https://coveralls.io/repos/github/uber/h3-js/badge.svg?branch=master)](https://coveralls.io/github/uber/h3-js?branch=master)
 
-The `h3-js` library provides a pure-JavaScript version of the [H3 Core Library](https://github.com/uber/h3), a hexagon-based geographic grid system. It can be used either in Node >= 6 or in the browser. The core library is transpiled from C using [emscripten](http://kripken.github.io/emscripten-site), offering full parity with the C API and highly efficient operations.
+The `h3-reactnative` library provides a React Native-compatible version of the [H3 Core Library](https://github.com/uber/h3), a hexagon-based geographic grid system. It can be used either in Node >= 6. The core library is transpiled from C using [emscripten](http://kripken.github.io/emscripten-site), offering full parity with the C API and highly efficient operations.
 
 For more information on H3 and for the full API documentation, please see the [H3 Documentation](https://uber.github.io/h3/).
 
@@ -17,7 +17,7 @@ For more information on H3 and for the full API documentation, please see the [H
 
 ## Usage
 
-The library uses ES6 modules. Bundles for Node and the browser are built to the `dist` folder.
+The library uses ES6 modules. Bundles for Node are built to the `dist` folder.
 
 ### Import
 
