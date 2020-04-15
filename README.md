@@ -24,13 +24,13 @@ The library uses ES6 modules. Bundles for Node are built to the `dist` folder.
 ES6 usage:
 
 ```js
-import {h3ToGeo} from "h3-js";
+import { geoToH3 } from "h3-reactnative";
 ```
 
 CommonJS usage:
 
 ```js
-const h3 = require("h3-js");
+const h3 = require("h3-reactnative");
 ```
 
 Pre-bundled script (library is available as an `h3` global):
