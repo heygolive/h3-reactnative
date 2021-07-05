@@ -3,10 +3,35 @@
 All notable changes to this project will be documented in this file. This library adheres to a versioning policy described in [the README](./README.md#versioning). The public API of this library consists of the functions exported in [h3core.js](./lib/h3core.js).
 
 ## [Unreleased]
+- *None*
+
+## [3.7.2] - 2021-04-29
+### Fixed
+- Accept integer input to `h3GetResolution` (#113)
+
+## [3.7.1] - 2021-03-10
+### Fixed
+- Fixed bug in freeing geo polygon memory during `polyfill` (#104)
+
+## [3.7.0] - 2020-10-15
+### Added
+- Added bindings for new area and distance functions (#93):
+	- `cellArea`
+	- `exactEdgeLength`
+	- `pointDist`
+- All functions accepting H3 index input now also accept a `[lowerBits, upperBits]` tuple of 32-bit integers (#91)
+### Fixed
+- Fixed type definition for `UNITS` (#94)
+### Changed
+- Updated the core library to 3.7.1 (#93)
+
+## [3.6.4] - 2020-06-02
 ### Fixed
 - Fixed `h3IsValid` returning true on certain edge cases (#81)
+- Fix some `polyfill` edge cases (#86)
 ### Changed
 - Updated the core library to 3.6.3 - minor fixes for `h3IsValid` and `compact` (#81)
+- Updated the core library to 3.6.4 - reinstate new `polyfill` algorithm (#86)
 
 ## [3.6.3] - 2019-12-10
 ### Fixed

@@ -20,6 +20,7 @@ import * as h3core from '../lib/h3core';
 // fixtures
 
 const h3Index = '89283080ddbffff';
+const h3IndexInt = [0x0ddbffff, 0x8928308];
 const polygon = [
     [37.85848750746621, -122.48880236632749],
     [37.860723745370926, -122.47361033446712],
@@ -28,6 +29,7 @@ const polygon = [
 ];
 const ring10 = h3core.kRing(h3Index, 10);
 const ring10Compact = h3core.compact(ring10);
+const ring10Polygon = h3core.h3SetToMultiPolygon(ring10)[0];
 
 export default function makeBenchmarks() {
     const suite = new Benchmark.Suite();
@@ -44,8 +46,16 @@ export default function makeBenchmarks() {
         h3core.h3ToGeo(h3Index);
     });
 
+    suite.add('h3ToGeo - integers', () => {
+        h3core.h3ToGeo(h3IndexInt);
+    });
+
     suite.add('h3ToGeoBoundary', () => {
         h3core.h3ToGeoBoundary(h3Index);
+    });
+
+    suite.add('h3ToGeoBoundary - integers', () => {
+        h3core.h3ToGeoBoundary(h3IndexInt);
     });
 
     suite.add('h3GetFaces', () => {
@@ -56,8 +66,16 @@ export default function makeBenchmarks() {
         h3core.kRing(h3Index, 1);
     });
 
-    suite.add('polyfill', () => {
+    suite.add('polyfill_9', () => {
         h3core.polyfill(polygon, 9, false);
+    });
+
+    suite.add('polyfill_11', () => {
+        h3core.polyfill(polygon, 11, false);
+    });
+
+    suite.add('polyfill_10ring', () => {
+        h3core.polyfill(ring10Polygon, 10, false);
     });
 
     suite.add('h3SetToMultiPolygon', () => {
